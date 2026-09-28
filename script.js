@@ -32,16 +32,16 @@
     {domain:"gad", label:"Ansiedade", text:"Você se Irrita facilmente?", opts:LIKERT4},
     {domain:"gad", label:"Ansiedade", text:"Você Sente medo como se algo ruim fosse acontecer?", opts:LIKERT4},
 
-    {domain:"pss", label:"Estresse (mês)", text:"Você fica aborrecido(a) por algo inesperado?", opts:LIKERT5},
-    {domain:"pss", label:"Estresse (mês)", text:"Você sente que não consegue controlar coisas importantes da sua vida?", opts:LIKERT5},
-    {domain:"pss", label:"Estresse (mês)", text:"Você se sente nervoso(a) e estressado(a)?", opts:LIKERT5},
-    {domain:"pss", label:"Estresse (mês)", text:"Você sente confiança na sua capacidade de resolver problemas pessoais?", opts:LIKERT5, reverse:true},
-    {domain:"pss", label:"Estresse (mês)", text:"Você sente que as coisas estão correndo bem?", opts:LIKERT5, reverse:true},
-    {domain:"pss", label:"Estresse (mês)", text:"Você sente que não consegue lidar com todas as suas tarefas?", opts:LIKERT5},
-    {domain:"pss", label:"Estresse (mês)", text:"Você Consegue controlar irritações em sua vida?", opts:LIKERT5, reverse:true},
-    {domain:"pss", label:"Estresse (mês)", text:"Você sente que tem tudo sob controle?", opts:LIKERT5, reverse:true},
-    {domain:"pss", label:"Estresse (mês)", text:"Você Fica irritado(a) por situações fora do seu controle?", opts:LIKERT5},
-    {domain:"pss", label:"Estresse (mês)", text:"Você sente que as dificuldades estavam se acumulando e não conseguia superá-las?", opts:LIKERT5}
+    {domain:"pss", label:"Estresse", text:"Você fica aborrecido(a) por algo inesperado?", opts:LIKERT5},
+    {domain:"pss", label:"Estresse", text:"Você sente que não consegue controlar coisas importantes da sua vida?", opts:LIKERT5},
+    {domain:"pss", label:"Estresse", text:"Você se sente nervoso(a) e estressado(a)?", opts:LIKERT5},
+    {domain:"pss", label:"Estresse", text:"Você sente confiança na sua capacidade de resolver problemas pessoais?", opts:LIKERT5, reverse:true},
+    {domain:"pss", label:"Estresse", text:"Você sente que as coisas estão correndo bem?", opts:LIKERT5, reverse:true},
+    {domain:"pss", label:"Estresse", text:"Você sente que não consegue lidar com todas as suas tarefas?", opts:LIKERT5},
+    {domain:"pss", label:"Estresse", text:"Você Consegue controlar irritações em sua vida?", opts:LIKERT5, reverse:true},
+    {domain:"pss", label:"Estresse", text:"Você sente que tem tudo sob controle?", opts:LIKERT5, reverse:true},
+    {domain:"pss", label:"Estresse", text:"Você Fica irritado(a) por situações fora do seu controle?", opts:LIKERT5},
+    {domain:"pss", label:"Estresse", text:"Você sente que as dificuldades estavam se acumulando e não conseguia superá-las?", opts:LIKERT5}
   ];
 
   var answers = new Array(questions.length).fill(null);
