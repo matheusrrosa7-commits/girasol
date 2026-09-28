@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Check-in de Saúde Mental</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="checkin.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <p class="eyebrow serif">check-in</p>
+    <h1>Como você tem estado?</h1>
+    <p class="lede">Um espaço rápido e privado para observar humor, ansiedade e estresse das últimas duas semanas. Suas respostas não são salvas em nenhum lugar — ao final, você recebe apenas uma orientação, sem números ou diagnósticos.</p>
+  </header>
+
+  <div class="card">
+
+    <div id="view-intro" data-view>
+      <p style="margin:0 0 10px; font-size:15px; color:var(--ink-soft);">Você vai responder a 26 perguntas curtas, uma de cada vez. Para cada uma, escolha a opção que melhor descreve as <strong>últimas duas semanas</strong> (a última pergunta olha para o último mês).</p>
+      <ul class="intro-list">
+        <li>Não há respostas certas ou erradas.</li>
+        <li>Você pode voltar a qualquer pergunta antes de terminar.</li>
+        <li>Isto é uma triagem educativa, não um diagnóstico.</li>
+      </ul>
+      <div class="intro-actions">
+        <button class="btn-primary" id="btn-start">Começar</button>
+      </div>
+    </div>
+
+    <div id="view-quiz" class="hidden" data-view>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      <span class="q-domain" id="q-domain"></span>
+      <p class="q-count" id="q-count"></p>
+      <p class="q-text" id="q-text"></p>
+      <fieldset id="q-options"></fieldset>
+      <div class="nav-row">
+        <button class="btn-ghost" id="btn-back">Voltar</button>
+        <button class="btn-primary" id="btn-next" disabled>Próxima</button>
+      </div>
+    </div>
+
+    <div id="view-results" class="hidden" data-view>
+      <div class="results">
+        <h2>Seu conselho</h2>
+        <p class="sub">Com base no que você respondeu — sem números, só orientação.</p>
+        <div id="alert-slot"></div>
+        <div id="advice-slot"></div>
+        <div class="restart">
+          <button class="btn-ghost" id="btn-restart">Refazer o check-in</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="footer-note">Isto não substitui avaliação profissional. Se em algum momento você sentir que não está seguro(a), ligue para o <strong>CVV — 188</strong> (24h, gratuito) ou acesse <strong>cvv.org.br</strong>.</p>
+</div>
+
+<script src="checkin.js"></script>
+</body>
+</html>
